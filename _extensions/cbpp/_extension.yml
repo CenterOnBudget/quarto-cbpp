@@ -1,0 +1,18 @@
+title: CBPP Branded Quarto Documents
+author: Claire Zippel
+version: 0.0.1
+contributes:
+  formats:
+    html:
+      theme: [default, theme-html.scss]
+      anchor-sections: true
+      toc-location: left
+      toc-title: Contents
+      link-external-icon: true
+      callout-appearance: minimal
+    revealjs:
+      theme: [default, theme-reveal.scss]
+      logo: logo.png
+      code-line-numbers: false
+      callout-appearance: simple
+

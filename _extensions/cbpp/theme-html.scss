@@ -1,0 +1,113 @@
+/*-- scss:defaults --*/
+
+// Fonts -----
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+// Colors -----
+$body-bg: #fafafa !default;
+$primary: #0c61a4 !default;
+$light: #eeeeee !default;
+$dark: #003767 !default;
+$info: #5590bf !default;
+$danger: #b9292f !default;
+$warning: #ff7800 !default;
+
+// Typography -----
+$body-color: #575757 !default;
+$font-family-sans-serif: Roboto, Helvetica, Arial, sans-serif !default;
+$font-family-monospace: Consolas, "Courier New", monospace !default;
+$font-size-root: 1rem !default;
+$line-height-base: 1.6 !default;
+$toc-font-size: 0.9rem !default;
+$headings-font-family: "Roboto Condensed", Helvetica, Arial, sans-serif !default;
+$headings-font-weight: 700 !default;
+$h1-font-size: 2.25rem !default;
+$h2-font-size: 2rem !default;
+$h3-font-size: 1.75rem !default;
+$h4-font-size: 1.5rem !default;
+$h5-font-size: 1.25rem !default;
+
+// Code -----
+$code-color: #454545 !default;
+
+// Callouts -----
+$callout-color-note: $primary !default;
+$callout-color-tip: $primary !default;
+$callout-color-caution: $warning !default;
+$callout-color-warning: $warning !default;
+$callout-color-important: $danger !default;
+
+
+/*-- scss:rules --*/
+
+// Headings -----
+h1.title {
+  font-family: $font-family-sans-serif;
+}
+p.subtitle {
+  font-size: 1.5rem;
+}
+.header-section-number {
+  color: inherit;
+}
+.header-section-number::after {
+  content: ".";
+}
+
+// Table of contents -----
+.sidebar nav[role="doc-toc"] > h2, .sidebar nav[role="doc-toc"] > .h2 {
+  font-size: 1.1rem;
+}
+.sidebar nav[role="doc-toc"] > ul li a {
+  border-left: none;
+  padding-left: 0px;
+}
+.sidebar nav[role="doc-toc"] ul > li > a.active {
+  border-left: none;
+  color: $primary;
+  font-weight: 400;
+}
+
+// Tables -----
+caption, .table-caption {
+  text-align: left;
+}
+table.table > thead {
+  border-top: none !important;
+}
+table td > ul {
+  margin-bottom: 0px;
+}
+
+// Callouts -----
+.callout.callout-style-default > div.callout-header {
+  opacity: 100%;
+}
+
+// Endnotes ----
+li[role="doc-endnote"] {
+  margin-bottom: 0.6rem;
+}
+
+// Code ----
+pre code {
+  color: $code-color;
+  line-height: 1.2;
+}
+div.cell {
+  border: 1px solid $light;
+  border-radius: .25rem;
+}
+div.sourceCode {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.cell-output.cell-output-stdout > pre {
+  padding: 0.4em;
+  margin-bottom: 0;
+}
+div.cell > div.sourceCode:not(:first-child) {
+  margin-top: 1em;
+}
+

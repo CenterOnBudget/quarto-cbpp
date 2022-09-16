@@ -1,0 +1,129 @@
+/*-- scss:defaults --*/
+
+// Fonts -----
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+// Colors -----
+$body-bg: #fafafa !default;
+$primary: #0c61a4 !default;
+$light: #eeeeee !default;
+$dark: #003767 !default;
+$info: #5590bf !default;
+$danger: #b9292f !default;
+$warning: #ff7800 !default;
+
+// Typography -----
+$body-color: #454545 !default;
+$font-family-sans-serif: Roboto, Helvetica, Arial, sans-serif !default;
+$font-family-monospace: Consolas, "Courier New", monospace !default;
+$presentation-font-size-root: 38px !default;
+$presentation-font-smaller: 0.8 !default;
+$presentation-line-height: 1.4 !default;
+$presentation-title-slide-text-align: left !default;
+$presentation-h1-font-size: 2.4em !default;
+$presentation-h2-font-size: 1.8em !default;
+$presentation-heading-color: $primary !default;
+$link-color: $primary !default;
+
+// Code -----
+$code-color: $body-color !default;
+$code-block-font-size: 0.65em !default;
+$code-block-bg: rgba($light, 0.65) !default;
+$code-block-border-color: $light !default;
+$code-bg : $code-block-bg !default;
+
+
+/*-- scss:rules --*/
+
+// Title slide -----
+.reveal h1.title {
+ font-size: 2em;
+}
+.reveal p.subtitle {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.reveal p.author {
+  font-size: 0.8em;
+  margin-bottom: 2px;
+}
+.reveal p.institute {
+  font-size: 0.7em;
+  margin: 0px 0px 0px 0px;
+}
+.reveal p.date {
+  font-size: 0.6em;
+  color: $text-muted;
+  margin-top: 12px;
+}
+
+// Headings -----
+.reveal h2 {
+  margin-bottom: 22px;
+}
+.reveal h3, .reveal h4 {
+  color: $body-color;
+}
+
+// Aside -----
+.reveal .slide aside {
+  font-size: 0.6em;
+}
+.reveal .slide aside > div > p {
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+
+// Tables -----
+table > caption {
+  font-size: 0.8em;
+  color: $text-muted;
+  text-align: left;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.reveal table th, .reveal table td {
+  font-size: 0.8em;
+  vertical-align: middle;
+  padding: 0.1em 0.25em 0.1em 0.25em;
+  border-bottom-width: 1.5px;
+}
+.reveal table td {
+  border-bottom-color: var(--quarto-border-color);
+}
+.reveal .slide table td > ul {
+  margin-bottom: 0px;
+}
+
+// Code -----
+.reveal pre {
+  line-height: 1.2;
+}
+div.cell-output.cell-output-stdout > pre {
+  padding: 0px !important;
+}
+div.cell-output.cell-output-stdout > pre > code {
+  padding: 6px 9px;
+}
+div.cell {
+  border: 1.5px solid $light;
+  border-radius: .25rem;
+}
+div.sourceCode {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.cell-output.cell-output-stdout > pre {
+  padding: 0.4em;
+  margin-bottom: 0;
+}
+div.cell > div.sourceCode:not(:first-child) {
+  margin-top: $code-block-font-size;
+}
+
+// Miscellaneous
+.reveal a {
+  text-decoration: underline;
+}
+
