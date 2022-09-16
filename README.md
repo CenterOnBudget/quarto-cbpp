@@ -4,7 +4,6 @@
 
 ```
 quarto use template centeronbudget/quarto-cbpp
-
 ```
 
 ## Usage
