@@ -16,7 +16,6 @@ $warning: #ff7800 !default;
 // Typography -----
 $body-color: #454545 !default;
 $font-family-sans-serif: Roboto, Helvetica, Arial, sans-serif !default;
-$font-family-monospace: Consolas, "Courier New", monospace !default;
 $presentation-font-size-root: 38px !default;
 $presentation-font-smaller: 0.8 !default;
 $presentation-line-height: 1.4 !default;
@@ -37,6 +36,9 @@ $code-bg : $code-block-bg !default;
 /*-- scss:rules --*/
 
 // Title slide -----
+#title-slide {
+  text-align: left;
+}
 .reveal h1.title {
  font-size: 2em;
 }
@@ -44,8 +46,14 @@ $code-bg : $code-block-bg !default;
   font-size: 1.2em;
   font-weight: 700;
 }
+.reveal .quarto-title-block .quarto-title-authors {
+  justify-content: left;
+}
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author {
+  padding: 0px;
+}
 .reveal p.author {
-  font-size: 0.8em;
+  font-size: 0.75em;
   margin-bottom: 2px;
 }
 .reveal p.institute {
