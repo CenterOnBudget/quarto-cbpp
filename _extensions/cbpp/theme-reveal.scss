@@ -83,7 +83,15 @@ $code-bg : $code-block-bg !default;
   margin-bottom: 6px;
 }
 
+// Lists -----
+.reveal .slide ul > li > ul > li {
+  font-size: 0.85em;
+}
+
 // Tables -----
+.reveal table {
+  margin-left: 0;
+}
 table > caption {
   font-size: 0.8em;
   color: $text-muted;
@@ -115,6 +123,7 @@ div.cell-output.cell-output-stdout > pre > code {
   padding: 6px 9px;
 }
 div.cell {
+  margin-top: 12px;
   border: 1.5px solid $light;
   border-radius: .25rem;
 }

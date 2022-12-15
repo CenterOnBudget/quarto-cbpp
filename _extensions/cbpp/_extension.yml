@@ -1,6 +1,6 @@
 title: CBPP Branded Quarto Documents
 author: Claire Zippel
-version: 0.0.2
+version: 0.0.3
 quarto-required: ">=1.2"
 contributes:
   formats:
@@ -14,6 +14,7 @@ contributes:
     revealjs:
       theme: [default, theme-reveal.scss]
       logo: logo.png
+      date-format: long
       code-line-numbers: false
       callout-appearance: simple
 
