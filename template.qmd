@@ -14,8 +14,8 @@ execute:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan dui in mauris commodo elementum.
 
-- Aliquam placerat felis non mi convallis consequat sed eu dolor. 
-- Sed accumsan risus massa, aliquet faucibus erat dignissim ac. 
+-   Aliquam placerat felis non mi convallis consequat sed eu dolor.
+-   Sed accumsan risus massa, aliquet faucibus erat dignissim ac.
 
 ## Executable Code
 
@@ -25,20 +25,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan dui in m
 
 ## Tables
 
-+---------------+---------------+--------------------+
-| Fruit         | Price         | Advantages         |
-+===============+===============+====================+
-| Bananas       | $1.34         | - built-in wrapper |
-|               |               | - bright color     |
-+---------------+---------------+--------------------+
-| Oranges       | $2.10         | - cures scurvy     |
-|               |               | - tasty            |
-+---------------+---------------+--------------------+
++---------+--------+----------------------+
+| Fruit   | Price  | Advantages           |
++=========+========+======================+
+| Bananas | \$1.34 | -   built-in wrapper |
+|         |        | -   bright color     |
++---------+--------+----------------------+
+| Oranges | \$2.10 | -   cures scurvy     |
+|         |        | -   tasty            |
++---------+--------+----------------------+
 
 ## Callouts
 
-:::{.callout-note}
-
+::: callout-note
 Cras convallis velit id molestie egestas. Sed non mi egestas nibh scelerisque posuere eget sit amet justo.
-
 :::

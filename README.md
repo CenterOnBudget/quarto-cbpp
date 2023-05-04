@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-quarto use template centeronbudget/quarto-cbpp
+quarto add centeronbudget/quarto-cbpp
 ```
 
 ## Usage
