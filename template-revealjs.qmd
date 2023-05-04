@@ -1,0 +1,93 @@
+---
+title: "Presentation"
+subtitle: "Convening Name"
+author: "My Name"
+institute: "Center on Budget and Policy Priorities"
+date: last-modified
+format: cbpp-revealjs
+toc: true
+execute: 
+  echo: true
+---
+
+## Heading Two
+
+-   Amet felis venenatis sapien cubilia congue cum.
+-   Torquent mauris posuere habitasse commodo blandit -- tempor hendrerit quisque taciti fusce.[^1]
+-   Pulvinar lobortis quisque nisi eros, pellentesque dignissim sed, dictumst donec leo lacus ornare turpis?
+
+[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan dui in mauris commodo elementum.
+
+    Urna enim ridiculus suspendisse sociosqu ut purus quam sociis, rhoncus, volutpat varius sollicitudin quisque eget; quis himenaeos montes.
+
+## ABC
+
+### Heading Three
+
+-   Aliquam placerat felis non mi `convallis consequat` sed eu dolor.
+-   Sed accumsan risus massa, aliquet faucibus erat dignissim ac.
+
+## DEF
+
+#### Heading Four
+
+-   Elit pharetra tincidunt inceptos augue malesuada, habitant, class consequat felis metus.
+    -   Conubia porttitor faucibus senectus consequat nibh congue tincidunt nullam faucibus aliquam?
+    -   Varius nostra nullam -- condimentum euismod ac himenaeos fusce dictum dui mollis sagittis.
+-   Integer pretium blandit laoreet sollicitudin cum ornare hac auctor quam tellus.
+
+## Aside
+
+Dolor arcu phasellus imperdiet lobortis quisque proin porttitor mauris. Iaculis vulputate cum augue tortor faucibus, enim mus dictum lacinia feugiat ad suscipit.
+
+::: aside
+Pellentesque blandit luctus pretium aliquam in, fusce tellus. Adipiscing senectus leo quis massa dictumst hendrerit dictum. Tincidunt iaculis ligula accumsan felis velit ultrices, sapien orci justo mollis ridiculus! Bibendum sem pulvinar ut cras dapibus convallis imperdiet vestibulum.
+:::
+
+## Executable Code
+
+```{r}
+1 + 1
+2 + 2
+```
+
+## Tables
+
++---------------+---------------+----------------------+
+| Fruit         | Price         | Advantages           |
++===============+===============+======================+
+| Bananas       | \$1.34        | -   built-in wrapper |
+|               |               | -   bright color     |
++---------------+---------------+----------------------+
+| Oranges       | \$2.10        | -   cures scurvy     |
+|               |               | -   tasty            |
++---------------+---------------+----------------------+
+
+: A table
+
+## Callouts
+
+::: callout-note
+### A callout
+
+Cras convallis velit id molestie egestas. Sed non mi egestas nibh scelerisque posuere eget sit amet justo.
+:::
+
+## Small {.smaller}
+
+-   Lorem ridiculus maecenas parturient aliquam pharetra odio neque turpis id tortor. Integer molestie pulvinar cursus risus, mattis, purus, nec, cum taciti aptent mollis penatibus.
+-   Augue nullam pulvinar faucibus, platea fermentum nam mattis. Dictumst erat fusce, vel, accumsan cras urna.
+
+## Long Code Block
+
+```{r}
+#| eval: false
+flights |> 
+  filter(dep_delay > 120) |>
+  mutate(
+    gain = dep_delay - arr_delay,
+    hours = air_time / 60,
+    gain_per_hour = gain / hours,
+    .keep = "used"
+  )
+```
