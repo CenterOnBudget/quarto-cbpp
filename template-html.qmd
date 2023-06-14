@@ -42,6 +42,21 @@ Dolor arcu phasellus imperdiet lobortis quisque proin porttitor mauris. Iaculis 
 2 + 2
 ```
 
+Output hidden:
+
+```{r}
+#| output: false
+1 + 1
+2 + 2
+```
+
+
+# Non-Executable Code
+
+```r
+1 + 1
+```
+
 # Tables
 
 +---------------+---------------+----------------------+
