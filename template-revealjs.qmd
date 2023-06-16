@@ -27,14 +27,10 @@ execute:
 -   Aliquam placerat felis non mi `convallis consequat` sed eu dolor.
 -   Sed accumsan risus massa, aliquet faucibus erat dignissim ac.
 
-## DEF
-
 #### Heading Four
 
 -   Elit pharetra tincidunt inceptos augue malesuada, habitant, class consequat felis metus.
     -   Conubia porttitor faucibus senectus consequat nibh congue tincidunt nullam faucibus aliquam?
-    -   Varius nostra nullam -- condimentum euismod ac himenaeos fusce dictum dui mollis sagittis.
--   Integer pretium blandit laoreet sollicitudin cum ornare hac auctor quam tellus.
 
 ## Aside
 
@@ -51,17 +47,25 @@ Pellentesque blandit luctus pretium aliquam in, fusce tellus. Adipiscing senectu
 2 + 2
 ```
 
-## Non-executable code
-
-```r
-1 + 1
-2 + 2
-```
-
 Output hidden:
 
 ```{r}
 #| output: false
+1 + 1
+2 + 2
+```
+
+Source code hidden:
+
+```{r}
+#| echo: false
+1 + 1
+2 + 2
+```
+
+## Non-executable code
+
+```r
 1 + 1
 2 + 2
 ```

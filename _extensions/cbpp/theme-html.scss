@@ -103,9 +103,11 @@ pre code {
   line-height: 1.2;
 }
 div.cell {
+  margin-bottom: 1rem;
+}
+div.cell.has-source-code {
   border: 1px solid $light;
   border-radius: $border-radius;
-  margin-bottom: 1rem;
 }
 div.cell > div.sourceCode {
   margin-top: 0;

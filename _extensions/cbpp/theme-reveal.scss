@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
 // Colors -----
-$body-bg: #fafafa !default;
+$body-bg: #fff !default;
 $primary: #0c61a4 !default;
 $light: #eeeeee !default;
 $dark: #05397e !default;
@@ -26,9 +26,9 @@ $link-color: $primary !default;
 // Code -----
 $code-color: $dark !default;
 $code-block-font-size: 0.65em !default;
-$code-block-bg: rgba($light, 0.65) !default;
+$code-block-bg: transparent !default;
 $code-block-border-color: $light !default;
-$code-bg : $code-block-bg !default;
+$code-bg: rgba($light, 0.4) !default;
 
 
 /*-- scss:rules --*/
@@ -109,14 +109,22 @@ table > caption {
 .reveal pre {
   line-height: 1.2;
 }
+div.sourceCode {
+  background-color: rgba($light, 0.4);
+}
 div.cell {
   margin-top: $presentation-block-margin;
-  border: 1.5px solid $light;
+}
+div.cell.has-source-code {
+  border: 1px solid $light;
   border-radius: $border-radius;
 }
 div.cell-output.cell-output-stdout > pre {
   background-color: transparent;
   padding: 0.4em 0em 0.4em 0em;
+}
+div.cell-output.cell-output-stdout > pre > code {
+  background-color: transparent;
 }
 div.cell > div.sourceCode:not(:first-child) {
   margin-top: 1rem;

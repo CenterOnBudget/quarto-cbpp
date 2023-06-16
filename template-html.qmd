@@ -51,6 +51,14 @@ Output hidden:
 ```
 
 
+Source code hidden:
+
+```{r}
+#| echo: false
+1 + 1
+2 + 2
+```
+
 # Non-Executable Code
 
 ```r
